@@ -1,0 +1,249 @@
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #f8f8f8;
+     margin: 0;
+     padding: 0;
+ }
+
+ /* ------------------for mobile--------------- */
+
+ .heading {
+     text-align: center;
+     font-size: 10px;
+ }
+ .pl{
+    padding-left: 5rem;
+ }
+ .tab {
+     display: none;
+ }
+ .mobile-left a{
+    text-decoration: none;
+    color: blue;
+ }
+ .mobile-left i {
+    color: black;
+ }
+ .container {
+     display: flex;
+     gap: 30px;
+     justify-content: center;
+ }
+
+ .left {
+     display: none;
+ }
+
+ .right {
+     display: none;
+ }
+
+ .center-content {
+     text-align: center;
+ }
+
+ .mobile {
+     padding: 6px;
+     font-size: 12px;
+ }
+
+ .mobile-left {
+     height: 170px;
+     width: 270px;
+     border: 1px solid gray;
+     border-radius: 4px;
+     margin-top: 20px;
+     display: flex;
+     font-size: 10px;
+     gap: 10px;
+     flex-direction: row;
+     justify-content:center;
+     padding: 10px
+ }
+
+ .pad {
+     padding: 2px;
+ }
+
+ button{
+    padding: 5px;
+    background-color: white;
+    border: 1px solid gainsboro;
+ }
+
+ .mob-rev .footer-details {
+     border: none;
+     border-bottom: 1px solid gray;
+     padding: 1px;
+     font-size: 6px;
+ }
+
+ .mob-rev {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+
+ .mobile-left img {
+     width: 120px;
+     height: 170px;
+     object-fit: cover;
+ }
+
+
+ /* -------------------for tablet----------------- */
+ @media screen and (min-width:650px) and (max-width:1024px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .mobile-content {
+        display: none;
+    }
+
+    .tab-container {
+        display: flex;
+        justify-content: center;
+        margin: 0px 50px;
+    }
+
+    .tab {
+        display: block;
+        padding: 10px;
+    }
+
+    .tab-img img {
+        width: 200px;
+        object-fit: cover;
+    }
+
+    .tab-details {
+        width: 166px;
+        height: 110px;
+        font-size: 8px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        box-shadow: 0px 0px 20px #000000;
+        top: -30px;
+        left: 8px;
+        padding: 10px;
+        border-radius: 2px;
+        border: 1px solid gainsboro;
+    }
+    .tab-details a{
+        text-decoration: none;
+    }
+    .pl{
+        padding-left: 110px;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex p{
+        background-color: gray;
+        padding: 2px;
+        color: white;
+        border-radius: 2px;
+    }
+
+    .tab-details .footer-details {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+}
+
+
+ /* --------------------for desktop device------------------- */
+ @media screen and (min-width: 1024px) {
+     .heading {
+         font-size: 16px;
+         text-align: center;
+     }
+
+     .tab {
+         display: none;
+     }
+
+     button {
+         display: none;
+     }
+
+     .container {
+         display: flex;
+         justify-content: center;
+     }
+
+     .left {
+         height: 510px;
+         width: 500px;
+         border: 1px solid gray;
+         border-radius: 4px;
+         margin-top: 20px;
+         padding: 10px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
+
+     .left a {
+         color: blue;
+         text-decoration: none;
+     }
+
+     .mobile-left {
+         display: none;
+     }
+
+     .left i {
+         margin: 0px 10px;
+     }
+
+     .image-left img {
+         width: 500px;
+         height: 300px;
+     }
+
+     .right {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
+
+     .card {
+         display: flex;
+         gap: 5px;
+         border: 1px solid gray;
+         border-radius: 4px;
+         margin: 10px;
+         width: 400px;
+         height: 149px;
+         font-size: 14px;
+     }
+
+     .ml {
+         margin-left: 100px;
+     }
+
+     .mobile {
+         display: none;
+     }
+
+     .footer-details {
+         border-top: 1px solid gray;
+         padding-top: 10px;
+     }
+
+     .card img {
+         width: 150px;
+         height: 149px;
+     }
+ }
