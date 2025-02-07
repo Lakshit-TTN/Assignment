@@ -1,103 +1,70 @@
- body {
-     font-family: Arial, sans-serif;
-     background-color: #f8f8f8;
-     margin: 0;
-     padding: 0;
- }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
 
- /* ------------------for mobile--------------- */
+/* ------------------for mobile--------------- */
 
- .heading {
-     text-align: center;
-     font-size: 10px;
- }
- .pl{
-    padding-left: 5rem;
- }
- .tab {
-     display: none;
- }
- .mobile-left a{
-    text-decoration: none;
-    color: blue;
- }
- .mobile-left i {
-    color: black;
- }
- .container {
-     display: flex;
-     gap: 30px;
-     justify-content: center;
- }
+.left {
+    display: none;
+}
 
- .left {
-     display: none;
- }
-
- .right {
-     display: none;
- }
-
- .center-content {
-     text-align: center;
- }
-
- .mobile {
-     padding: 6px;
-     font-size: 12px;
- }
-
- .mobile-left {
-     height: 170px;
-     width: 270px;
-     border: 1px solid gray;
-     border-radius: 4px;
-     margin-top: 20px;
-     display: flex;
-     font-size: 10px;
-     gap: 10px;
-     flex-direction: row;
-     justify-content:center;
-     padding: 10px
- }
-
- .pad {
-     padding: 2px;
- }
-
- button{
+.center-content {
+    text-align: center;
+}
+button {
     padding: 5px;
     background-color: white;
     border: 1px solid gainsboro;
- }
+}
 
- .mob-rev .footer-details {
-     border: none;
-     border-bottom: 1px solid gray;
-     padding: 1px;
-     font-size: 6px;
- }
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
- .mob-rev {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
- }
+.heading {
+    text-align: center;
+}
 
- .mobile-left img {
-     width: 120px;
-     height: 170px;
-     object-fit: cover;
- }
+.card {
+    display: flex;
+    gap: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 10px;
+    width: 400px;
+    height: 165px;
+    font-size: 13px;
+}
 
+.right .card img {
+    width: 100px;
+    height: 165px;
+    object-fit: cover;
+}
 
- /* -------------------for tablet----------------- */
- @media screen and (min-width:650px) and (max-width:1024px) {
+.right .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-details {
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+.footer-details i {
+    padding-left: 10px;
+}
+
+/* -------------------for tablet----------------- */
+@media screen and (min-width:650px) and (max-width:1024px) {
     .left {
-        display: none;
-    }
-
-    .right {
         display: none;
     }
 
@@ -105,145 +72,169 @@
         display: none;
     }
 
-    .tab-container {
+    .center-content {
+        display: none;
+    }
+
+    .right {
         display: flex;
-        justify-content: center;
-        margin: 0px 50px;
+        flex-direction: row;
+        gap: 1px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
 
-    .tab {
-        display: block;
-        padding: 10px;
-    }
-
-    .tab-img img {
+    .right .card {
+        position: relative;
         width: 200px;
+        height: 200px;
+    }
+
+
+    .right .details .footer-details {
+        display: none;
+    }
+
+    .right .card .image img {
+        width: 200px;
+        height: 200px;
         object-fit: cover;
     }
 
-    .tab-details {
-        width: 166px;
-        height: 110px;
-        font-size: 8px;
-        background-color: rgb(255, 255, 255);
-        position: relative;
+    .right .card .details {
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        background-color: white;
+        padding: 5px;
+        width: 150px;
         box-shadow: 0px 0px 20px #000000;
-        top: -30px;
-        left: 8px;
-        padding: 10px;
-        border-radius: 2px;
-        border: 1px solid gainsboro;
-    }
-    .tab-details a{
-        text-decoration: none;
-    }
-    .pl{
-        padding-left: 110px;
-    }
-    .flex{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
-    .flex p{
+    .right .card .details h3 {
+        margin: 0;
+    }
+
+    .right .card .details p {
+        font-size: 14px;
+    }
+
+    .right .card .details i {
+        font-size: 12px;
+    }
+    .grey {
         background-color: gray;
         padding: 2px;
         color: white;
-        border-radius: 2px;
+        margin: 2px;
     }
-
-    .tab-details .footer-details {
+    .right .card .details .footer-details {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        font-size: 10px;
+        justify-content: space-between;
+    }    
+    .hide{
+        display: none;
     }
-
 }
 
 
- /* --------------------for desktop device------------------- */
- @media screen and (min-width: 1024px) {
-     .heading {
-         font-size: 16px;
-         text-align: center;
-     }
+/* --------------------for desktop device------------------- */
+@media screen and (min-width: 1024px) {
+    .heading {
+        font-size: 16px;
+        text-align: center;
+    }
+    .center-content {
+        display: none;
+    }
 
-     .tab {
-         display: none;
-     }
+    .tab {
+        display: none;
+    }
 
-     button {
-         display: none;
-     }
+    button {
+        display: none;
+    }
 
-     .container {
-         display: flex;
-         justify-content: center;
-     }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
 
-     .left {
-         height: 510px;
-         width: 500px;
-         border: 1px solid gray;
-         border-radius: 4px;
-         margin-top: 20px;
-         padding: 10px;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-     }
+    .left {
+        height: 510px;
+        width: 500px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        margin-top: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-     .left a {
-         color: blue;
-         text-decoration: none;
-     }
+    .left a {
+        color: blue;
+        text-decoration: none;
+    }
 
-     .mobile-left {
-         display: none;
-     }
+    .left .footer-details {
+        border: none;
+        border-top: 1px solid black;
+        font-size: 14px;
+    }
 
-     .left i {
-         margin: 0px 10px;
-     }
+    .mobile-left {
+        display: none;
+    }
 
-     .image-left img {
-         width: 500px;
-         height: 300px;
-     }
+    .left i {
+        margin: 0px 10px;
+    }
 
-     .right {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-     }
+    .image-left img {
+        width: 500px;
+        height: 300px;
+    }
 
-     .card {
-         display: flex;
-         gap: 5px;
-         border: 1px solid gray;
-         border-radius: 4px;
-         margin: 10px;
-         width: 400px;
-         height: 149px;
-         font-size: 14px;
-     }
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-     .ml {
-         margin-left: 100px;
-     }
+    .card {
+        display: flex;
+        gap: 5px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        margin: 10px;
+        width: 400px;
+        height: 163px;
+        font-size: 13px;
+    }
 
-     .mobile {
-         display: none;
-     }
+    .right .card .details {
+        display: flex;
+        justify-content: space-around;
+    }
 
-     .footer-details {
-         border-top: 1px solid gray;
-         padding-top: 10px;
-     }
+    .ml {
+        margin-left: 100px;
+    }
 
-     .card img {
-         width: 150px;
-         height: 149px;
-     }
- }
+    .mobile {
+        display: none;
+    }
+
+    .right .footer-details {
+        display: none;
+    }
+
+
+    .right .card img {
+        width: 150px;
+        height: 163px;
+    }
+}
